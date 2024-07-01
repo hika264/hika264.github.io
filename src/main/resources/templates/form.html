@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>運勢占い</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>今日の運勢</h2>
+        <p>あなたの今日の運勢を見てみましょう！</p>
+        <p>名前を入力してね。</p>
+        <form action="/fortune" method="post">
+            <label for="name">お名前：</label>
+            <input type="text" id="name" name="name">
+            <button type="submit" class="button">運勢を見る</button>
+        </form>
+    </div>
+</body>
+</html>

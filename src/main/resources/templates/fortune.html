@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fortune</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>あなたの運勢</h2>
+        <p th:text=" ${name} + 'さんの運勢は...'"></p>
+        <strong th:text="${fortune}"></strong>
+        <p>ラッキーカラーは... </p>
+        <strong class="lucky-color" th:style="'background-color:' + ${colorCode}"><span th:text="${colorName}" class="color-name"></span>（<span th:text="${colorCode}" ></span>）</strong>
+        
+        <br>
+        <p>素敵な一日になりますように☆</p>
+    </div>
+</body>
+</html>
