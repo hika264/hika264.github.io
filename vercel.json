@@ -9,7 +9,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "build/libs/YOUR_PROJECT_NAME.jar"
+            "dest": "build/libs/Fortune.jar"
         }
     ]
 }
