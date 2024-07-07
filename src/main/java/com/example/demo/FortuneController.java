@@ -27,7 +27,7 @@ public class FortuneController {
 	//	初期表示：フォーム（名前入力用）
 	@GetMapping("/fortune")
 	public String showForm() {
-		return "form";
+		return "index";
 	}
 
 	//	運勢を表示する(名前が未記入の場合はゲストと表示)
